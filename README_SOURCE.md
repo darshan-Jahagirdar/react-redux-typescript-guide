@@ -1020,7 +1020,7 @@ class TextInput extends React.Component<TextInputProps> {
   }
 }
 
-class Form extends React.Component {
+class Form extends React.Component<{}, {}> {
   private readonly textInputRef = React.createRef<TextInput>();
 
   componentDidMount() {
@@ -1036,7 +1036,7 @@ class Form extends React.Component {
 For DOM elements, use the corresponding DOM type instead:
 
 ```tsx
-class SearchInput extends React.Component {
+class SearchInput extends React.Component<{}, {}> {
   private readonly inputRef = React.createRef<HTMLInputElement>();
 
   componentDidMount() {
